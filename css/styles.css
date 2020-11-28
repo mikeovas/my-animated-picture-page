@@ -1,0 +1,75 @@
+/* Base Element Styles */
+* {box-sizing: border-box;}
+
+body {
+    background-color: rgb(143, 143, 177);
+}
+
+
+.main-title {
+    text-align: center;
+    color: darkblue;
+}
+
+.photo-cube {
+	max-width: 200px;
+	text-align: center;
+	margin: auto;
+}
+
+.right {
+    background: rgb(0, 195, 255);
+}
+
+/* Photo Cube */
+
+.photo-container {
+    /* box-shadow: 0 18px 40px 5px rgba(0,0,0,.4); */
+	perspective: 800px;
+}
+
+.photo-cube {
+    height: 200px;
+    width: 200px;
+    transition: transform 5s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.photo-cube:hover {
+    transform: rotateY(270deg);
+}
+
+
+.left, 
+.right, 
+.top,
+.bottom, 
+.front, 
+.back {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    margin: 0;
+}
+
+.front {
+    transform: translateZ(100px);
+}
+.back {
+    transform: translateZ(-100px) rotateY(-180deg);
+}
+
+.left {
+    transform: rotateY(90deg) translateZ(-100px);
+}
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+.bottom {
+    transform: translateY(100px) rotateX(-90deg);
+}
+.top {
+    transform: rotateX(90deg) translateZ(100px);
+   
+}
