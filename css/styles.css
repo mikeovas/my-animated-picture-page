@@ -5,11 +5,25 @@ body {
     background-color: rgb(200, 200, 240);
 }
 
-
 .main-title {
     text-align: center;
     color: darkblue;
+    font-size: 1.5em;
+    margin-bottom: 50px;
 }
+
+.main-title img {
+    margin-top: 20px;
+    margin-bottom: 0;
+    height: 40px;
+}
+
+.cube-title {
+    text-align: center;
+    color: darkblue;
+}
+
+
 
 .photo-cube {
 	max-width: 200px;
