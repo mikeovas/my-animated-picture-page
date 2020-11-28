@@ -2,7 +2,7 @@
 * {box-sizing: border-box;}
 
 body {
-    background-color: rgb(143, 143, 177);
+    background-color: rgb(200, 200, 240);
 }
 
 
@@ -24,7 +24,6 @@ body {
 /* Photo Cube */
 
 .photo-container {
-    /* box-shadow: 0 18px 40px 5px rgba(0,0,0,.4); */
 	perspective: 800px;
 }
 
