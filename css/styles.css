@@ -18,12 +18,12 @@ body {
     height: 40px;
 }
 
-.cube-title {
+.photo-title {
     text-align: center;
     color: darkblue;
+    margin-top: 80px;
+
 }
-
-
 
 .photo-cube {
 	max-width: 200px;
@@ -31,9 +31,20 @@ body {
 	margin: auto;
 }
 
-.right {
-    background: rgb(0, 195, 255);
+.photo-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
+
+.gallery img {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-bottom: 20px;
+ }
+
 
 /* Photo Cube */
 
@@ -46,12 +57,19 @@ body {
     width: 200px;
     transition: transform 5s ease-in-out;
     transform-style: preserve-3d;
+    margin-bottom: 100px;
 }
 
 .photo-cube:hover {
     transform: rotateY(270deg);
 }
 
+.right {
+    background: rgb(0, 195, 255);
+    text-align: center;
+    font-size: 0.9em;
+    padding: 30% 10%;
+}
 
 .left, 
 .right, 
@@ -85,4 +103,32 @@ body {
 .top {
     transform: rotateX(90deg) translateZ(100px);
    
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .flex-pair {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+     }
+
+    .flex-pair img {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .flex-pair {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+     }
+
+    .flex-pair img {
+        width: 33.3%;
+        margin-bottom: 20px;
+    }
 }
