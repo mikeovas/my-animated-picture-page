@@ -9,7 +9,6 @@ body {
     text-align: center;
     color: darkblue;
     font-size: 1.5em;
-    /* margin-bottom: 50px; */
 }
 
 .main-title img {
@@ -109,8 +108,12 @@ body {
 
 /* Transitions & Transformations */
 
+.flex-pair {
+    perspective: 800px;
+}
+
 img {
-    transition: transform 3s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .size img:hover {
@@ -121,11 +124,29 @@ img {
     transform: rotate(360deg);
 }
 
+.flow img:hover {
+    transform: translate3d(500px, 50px, 50px);
+}
 
+.neg-slide img:hover {
+    transform: skew(-15deg, -25deg);
+}
 
+.spinning img:hover {
+    transform: rotateY(360deg);
+}
 
+.move-slide img:hover {
+    transform: translateY(-250px) rotate(180deg);
+}
 
+.fall img:hover {
+    transform: translateX(150px) translateY(800px) rotateY(180deg);
+}
 
+.pos-slide img:hover {
+    transform: skew(15deg, 25deg);
+}
 /* Media Queries */
 
 @media (min-width: 768px) {
