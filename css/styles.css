@@ -9,7 +9,7 @@ body {
     text-align: center;
     color: darkblue;
     font-size: 1.5em;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .main-title img {
@@ -106,6 +106,25 @@ body {
     transform: rotateX(90deg) translateZ(100px);
    
 }
+
+/* Transitions & Transformations */
+
+img {
+    transition: transform 3s ease-in-out;
+}
+
+.size img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.spin img:hover {
+    transform: rotate(360deg);
+}
+
+
+
+
+
 
 /* Media Queries */
 
